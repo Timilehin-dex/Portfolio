@@ -3,25 +3,20 @@ body {
 }
 .main {
   padding-top: 60px;
-  background-image: linear-gradient(#1e5d81, #1a4b66, #153448, #0c2636);
+  background-color: rgb(243, 243, 243);
+  /* background-image: linear-gradient(#1e5d81, #1a4b66, #153448, #0c2636); */
 }
 :root {
   --primary-color: black;
 }
 .one {
-  /* background-color: #0c2636; */
+  background-color: rgb(188, 207, 211);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding: 10px;
   border-radius: 4px;
   position: fixed;
-  transition: 0.3s ease-in-out;
 }
-.one:hover {
-  transform: scale(1.05);
-}
-.one .image {
-  border-bottom: 1px solid black;
-}
+
 .one img {
   border-radius: 50px;
   margin-bottom: 20px;
@@ -37,17 +32,16 @@ body {
 }
 .one p {
   text-align: center;
+  text-transform: capitalize;
   font-size: 16px;
   font-weight: 400;
-  color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.5);
 }
 .one .cv {
   text-align: center;
-  padding: 20px;
-  transition: 0.3s ease-in-out;
-}
-.one .cv:hover {
-  transform: scale(1.05);
+  padding: 40px;
+  margin: 0 -10px -10px -10px;
+  background-color: #fff;
 }
 .one a {
   color: #fff;
@@ -57,6 +51,7 @@ body {
   border-radius: 24px;
   background-color: black;
   font-weight: 600;
+  transition: 0.3 ease;
 }
 
 .two {
@@ -64,11 +59,19 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   /* background-color: #eeeeee; */
   border-radius: 4px;
+  background-color: #fff;
+}
+.two .two-two {
+  padding: 40px 20px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(243, 243, 243);
 }
 .two .two-one {
   padding: 40px 20px;
   margin-top: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(243, 243, 243);
 }
 
 .two .two-one img {
@@ -145,6 +148,7 @@ body {
   padding: 40px 20px;
   margin-top: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(243, 243, 243);
 }
 .two form label {
   font-size: 16px;
