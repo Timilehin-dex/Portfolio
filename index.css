@@ -67,6 +67,20 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   background-color: rgb(243, 243, 243);
 }
+.two .two-two .cv {
+  float: right;
+  display: none;
+}
+.two .two-two .cv a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 24px;
+  background-color: black;
+  font-weight: 600;
+  transition: 0.3 ease;
+}
 .two .two-one {
   padding: 40px 20px;
   margin-top: 20px;
@@ -193,4 +207,42 @@ body {
 
 .three a:hover {
   transform: scale(1.2);
+}
+@media (min-width: 100px) and (max-width: 1399.98px) {
+  .one {
+    position: static;
+  }
+}
+@media (min-width: 100px) and (max-width: 1199.98px) {
+  .one .cv {
+    text-align: center;
+    padding: 30px;
+    margin: 0 -10px -10px -10px;
+    background-color: #fff;
+  }
+}
+@media (min-width: 100px) and (max-width: 991.98px) {
+  .one {
+    position: static;
+    display: none;
+  }
+  .two .two-two .cv {
+    float: right;
+    display: block;
+  }
+}
+@media (min-width: 100px) and (max-width: 767.98px) {
+  .one {
+    position: static;
+    display: none;
+  }
+  .three {
+    padding: 20px 0;
+    flex-direction: row;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: static;
+  }
 }
