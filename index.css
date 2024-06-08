@@ -9,51 +9,8 @@ body {
 :root {
   --primary-color: black;
 }
-.one {
-  background-color: rgb(188, 207, 211);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  border-radius: 4px;
-  position: fixed;
-}
-
-.one img {
-  border-radius: 50px;
-  margin-bottom: 20px;
-  width: 280px;
-  height: auto;
-}
-.one h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--primary-color);
-}
-.one p {
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 16px;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.5);
-}
-.one .cv {
-  text-align: center;
-  padding: 40px;
-  margin: 0 -10px -10px -10px;
-  background-color: #fff;
-}
-.one a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 10px;
-  border-radius: 24px;
-  background-color: black;
-  font-weight: 600;
-  transition: 0.3 ease;
-}
-
+/*  */
+/*  */
 .two {
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -61,33 +18,56 @@ body {
   border-radius: 4px;
   background-color: #fff;
 }
+
 .two .two-two {
   padding: 40px 20px;
   margin-top: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   background-color: rgb(243, 243, 243);
 }
-.two .two-two .cv {
-  float: right;
-  display: none;
-}
-.two .two-two .cv a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 10px;
-  border-radius: 24px;
-  background-color: black;
+.two .two-two h3 {
+  font-size: 28px;
   font-weight: 600;
-  transition: 0.3 ease;
+  color: var(--primary-color);
 }
+.two .two-two p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+/*  */
 .two .two-one {
   padding: 40px 20px;
   margin-top: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   background-color: rgb(243, 243, 243);
 }
-
+.two .two-one h2 {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  transition: 0.3s ease-in-out;
+}
+.two .two-one h2:hover {
+  transform: scale(1.1);
+}
+.two .two-one h2::after {
+  content: " ";
+  display: block;
+  background: #000;
+  width: 50px;
+  height: 2px;
+  margin: 0 auto;
+  transition: 0.5s ease-in-out;
+}
+.two .two-one h2:hover::after {
+  content: " ";
+  width: 100px;
+  height: 2px;
+}
 .two .two-one img {
   border-radius: 4px;
   transition: 0.5s ease-in-out;
@@ -97,67 +77,15 @@ body {
   filter: none;
   transform: scale(1.3);
 }
-.two .two-one img:hover .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
-}
-.two h3 {
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--primary-color);
-}
-.two h3::after {
-  content: " ";
-  display: block;
-  background: #000;
-  width: 0px;
-  height: 2px;
-  transition: 0.5s ease-in-out;
-}
-.two h3:hover::after {
-  content: " ";
-  display: block;
-  background: #000;
-  width: 240px;
-  height: 2px;
-}
-.two p {
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--primary-color);
-}
-
-.two h2 {
+.two .two-one p {
+  margin: 10px 0 0 0;
   text-align: center;
-  text-transform: capitalize;
-  color: var(--primary-color);
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  transition: 0.3s ease-in-out;
 }
-.two h2:hover {
-  transform: scale(1.1);
+.two .two-one p a {
+  text-decoration: none;
+  color: #000;
 }
-.two h2::after {
-  content: " ";
-  display: block;
-  background: #000;
-  width: 50px;
-  height: 2px;
-  margin: 0 auto;
-  transition: 0.5s ease-in-out;
-}
-.two h2:hover::after {
-  content: " ";
-  width: 100px;
-  height: 2px;
-}
+/*  */
 .two .two-form {
   padding: 40px 20px;
   margin-top: 20px;
@@ -194,55 +122,90 @@ body {
   font-size: 13px;
   font-style: italic;
 }
-.three {
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
+/*  */
+/*  */
+footer .timi {
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 5px;
 }
-.three a {
+footer .timi a {
   color: black;
   font-size: 22px;
   transition: 0.3s ease-in-out;
+  padding: 0 5px;
 }
-
-.three a:hover {
-  transform: scale(1.2);
+footer .cv a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 24px;
+  background-color: black;
+  font-weight: 600;
+  font-size: 16px;
 }
-@media (min-width: 100px) and (max-width: 1399.98px) {
-  .one {
-    position: static;
+@media (min-width: 300px) and (max-width: 991.98px) {
+}
+@media (min-width: 300px) and (max-width: 481.98px) {
+  .two .two-two h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary-color);
   }
-}
-@media (min-width: 100px) and (max-width: 1199.98px) {
-  .one .cv {
+  .two .two-two p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+  }
+  .two .two-one h2 {
     text-align: center;
-    padding: 30px;
-    margin: 0 -10px -10px -10px;
-    background-color: #fff;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+  }
+  footer .timi a {
+    color: black;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+    padding: 0 5px;
   }
 }
-@media (min-width: 100px) and (max-width: 991.98px) {
-  .one {
-    position: static;
-    display: none;
+@media (min-width: 300px) and (max-width: 427.98px) {
+  .two .two-two h3 {
+    font-size: 22px;
   }
-  .two .two-two .cv {
-    float: right;
-    display: block;
+  .two .two-two p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
   }
-}
-@media (min-width: 100px) and (max-width: 767.98px) {
-  .one {
-    position: static;
-    display: none;
+  .two .two-one h2 {
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
   }
-  .three {
-    padding: 20px 0;
-    flex-direction: row;
-    row-gap: 20px;
-    column-gap: 20px;
-    justify-content: center;
-    align-items: center;
-    position: static;
+  footer .timi a {
+    color: black;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    padding: 0 5px;
+  }
+  footer .cv a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px;
+    border-radius: 24px;
+    background-color: black;
+    font-weight: 600;
+    font-size: 14px;
   }
 }
